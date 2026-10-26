@@ -1,0 +1,109 @@
+site_name: Observability Mastery Path
+site_description: A free Observability course — Prometheus, PromQL, Grafana dashboards, alerting, OpenTelemetry, and SLOs.
+site_url: https://sigilipelli.github.io/observability-mastery-path/
+repo_url: https://github.com/sigilipelli/observability-mastery-path
+repo_name: observability-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Metrics & Prometheus Fundamentals":
+      - Overview: level-1/index.md
+      - "01 · What Observability Actually Means: Metrics, Logs & Traces": level-1/01-what-observability-means.md
+      - "02 · The Prometheus Data Model: Time Series, Labels & Samples": level-1/02-prometheus-data-model.md
+      - "03 · Instrumenting an App: Counters, Gauges, Histograms & Summaries": level-1/03-instrumenting-metric-types.md
+      - "04 · Scraping: Targets, Service Discovery & Pull vs Push": level-1/04-scraping-service-discovery.md
+      - "05 · PromQL Basics: Selecting & Filtering Time Series": level-1/05-promql-basics.md
+      - "06 · PromQL Aggregation: sum, rate() & Why Counters Need It": level-1/06-promql-aggregation-rate.md
+      - "07 · Histogram Quantiles: Why You Can't Average a Histogram": level-1/07-histogram-quantiles.md
+      - "08 · Recording Rules: Pre-Computing Expensive Queries": level-1/08-recording-rules.md
+      - "09 · Prometheus Storage: the TSDB on Disk & Retention": level-1/09-prometheus-storage-tsdb.md
+      - "10 · Project — Instrument and Scrape a Real Multi-Service App": level-1/10-project-instrument-scrape.md
+  - "Level 2 · Dashboards, Alerting & Logs":
+      - Overview: level-2/index.md
+      - "01 · Grafana Fundamentals: Data Sources, Panels & Dashboards": level-2/01-grafana-fundamentals.md
+      - "02 · Building a Real RED Dashboard: Rate, Errors, Duration": level-2/02-red-dashboard.md
+      - "03 · The Four Golden Signals & the USE Method": level-2/03-golden-signals-use-method.md
+      - "04 · Alerting Rules: Prometheus & Alertmanager Basics": level-2/04-alerting-rules-alertmanager.md
+      - "05 · Alert Routing, Grouping & Silencing": level-2/05-alert-routing-grouping-silencing.md
+      - "06 · Avoiding Alert Fatigue: Designing Alerts That Page the Right Person": level-2/06-avoiding-alert-fatigue.md
+      - "07 · Centralized Logging Fundamentals: Why grep Doesn't Scale": level-2/07-centralized-logging-fundamentals.md
+      - "08 · Structured Logging & Correlating Logs with Metrics": level-2/08-structured-logging-correlation.md
+      - "09 · Log-Based Metrics vs Native Metrics": level-2/09-log-based-vs-native-metrics.md
+      - "10 · Project — A Real Alert That Fires, Routes & Pages": level-2/10-project-real-alert-pages.md
+  - "Level 3 · Distributed Tracing & OpenTelemetry":
+      - Overview: level-3/index.md
+      - "01 · OpenTelemetry Fundamentals: the Vendor-Neutral Standard": level-3/01-opentelemetry-fundamentals.md
+      - "02 · Instrumenting Code: Spans & Context Propagation": level-3/02-instrumenting-spans-context.md
+      - "03 · OpenTelemetry Metrics: the Convergence with Prometheus": level-3/03-otel-metrics-convergence.md
+      - "04 · Exporters & the Collector: Decoupling Instrumentation from Backend": level-3/04-exporters-collector.md
+      - "05 · Sampling: Why You Can't (and Shouldn't) Trace Everything": level-3/05-sampling-strategies.md
+      - "06 · Correlating the Three Pillars for One Real Request": level-3/06-correlating-three-pillars.md
+      - "07 · Cardinality: the Silent Killer of Metrics Systems": level-3/07-cardinality-explosion.md
+      - "08 · Instrumentation Overhead: Measuring the Cost of Observability": level-3/08-instrumentation-overhead.md
+      - "09 · Black-Box vs White-Box Monitoring": level-3/09-blackbox-vs-whitebox.md
+      - "10 · Project — Full-Stack Observability for a Real Request": level-3/10-project-full-stack-observability.md
+  - "Level 4 · SLOs & Operating Observability at Scale":
+      - Overview: level-4/index.md
+      - "01 · SLIs, SLOs & SLAs: the Real Differences": level-4/01-slis-slos-slas.md
+      - "02 · Error Budgets: Turning Reliability Into a Spendable Number": level-4/02-error-budgets.md
+      - "03 · Burn Rate Alerts: Multi-Window Multi-Burn-Rate Alerting": level-4/03-burn-rate-alerts.md
+      - "04 · Designing an SLO for a Real Service": level-4/04-designing-an-slo.md
+      - "05 · Capacity Planning From Real Metrics": level-4/05-capacity-planning.md
+      - "06 · Scaling Prometheus: Federation, Remote Write & Long-Term Storage": level-4/06-scaling-prometheus.md
+      - "07 · Observability as Code: Dashboards & Alerts in Version Control": level-4/07-observability-as-code.md
+      - "08 · On-Call & Incident Response With Your Own Stack": level-4/08-oncall-incident-response.md
+      - "09 · Common Observability Anti-Patterns": level-4/09-observability-antipatterns.md
+      - "10 · Capstone — Build a Complete SLO-Driven Observability Stack": level-4/10-capstone-slo-driven-stack.md
