@@ -71,7 +71,7 @@ way: **parse once, index once, query many times.** The real `CREATE INDEX` state
 245x+ speedup possible — without it, SQLite would also have to scan every row for every query, closer to grep's
 cost; the index lets it jump directly to matching rows instead.
 
-This directly explains why [Microservices, Level 4, Lesson 6](https://sigilipelli.github.io/microservices-mastery-path/level-4/06-observability-across-boundaries/)'s
+This directly explains why [Microservices, Level 4, Lesson 6](https://learnmasterypath.com/microservices-mastery-path/level-4/06-observability-across-boundaries/)'s
 real structured JSON logs, correlated by `trace_id`, matter in the first place: structured fields (not free-text
 messages) are exactly what makes a real index, and a real fast structured query, possible at all. Unstructured
 log lines force every real logging backend back toward grep-like full-text scanning, no matter how much

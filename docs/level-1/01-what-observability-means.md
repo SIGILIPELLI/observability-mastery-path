@@ -42,11 +42,11 @@ your system. Each one throws away different information to stay cheap and useful
   store and fast to query even across millions of real requests, at the cost of never being able to answer "which
   specific one."
 - **Logs** keep per-event detail — this course's real structured logs from
-  [Microservices, Lesson 6](https://sigilipelli.github.io/microservices-mastery-path/level-4/06-observability-across-boundaries/)
+  [Microservices, Lesson 6](https://learnmasterypath.com/microservices-mastery-path/level-4/06-observability-across-boundaries/)
   are a direct example — but at a storage and query cost that scales with request volume, not with how many
   distinct label combinations exist, which is the opposite tradeoff from a metric.
 - **Traces** keep the *causal structure* across a single request as it moves through multiple services — exactly
-  what [Microservices, Lesson 8](https://sigilipelli.github.io/microservices-mastery-path/level-3/08-distributed-tracing/)
+  what [Microservices, Lesson 8](https://learnmasterypath.com/microservices-mastery-path/level-3/08-distributed-tracing/)
   built directly, with real parent-child spans — answering "where did the time go, structurally, for this one
   request," which neither a metric nor an unstructured pile of logs answers directly.
 

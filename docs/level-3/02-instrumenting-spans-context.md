@@ -65,7 +65,7 @@ This is the real mechanism that makes a distributed trace possible across servic
 different teams, potentially in different languages — as long as every service's tracing library implements the
 same real, standard W3C header format, propagation works regardless of what's on either end. This is the same
 real `x-trace-id`/`x-parent-span-id` pattern this course's own
-[Microservices, Level 3, Lesson 8](https://sigilipelli.github.io/microservices-mastery-path/level-3/08-distributed-tracing/)
+[Microservices, Level 3, Lesson 8](https://learnmasterypath.com/microservices-mastery-path/level-3/08-distributed-tracing/)
 built by hand with custom headers — OpenTelemetry's `inject`/`extract` functions do the identical real job, using
 a standardized header format instead of a custom one, which is precisely the interoperability benefit of using a
 real standard over a hand-rolled scheme.

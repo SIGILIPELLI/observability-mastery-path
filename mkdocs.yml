@@ -1,6 +1,6 @@
 site_name: Observability Mastery Path
 site_description: A free Observability course — Prometheus, PromQL, Grafana dashboards, alerting, OpenTelemetry, and SLOs.
-site_url: https://sigilipelli.github.io/observability-mastery-path/
+site_url: https://learnmasterypath.com/observability-mastery-path/
 repo_url: https://github.com/sigilipelli/observability-mastery-path
 repo_name: observability-mastery-path
 

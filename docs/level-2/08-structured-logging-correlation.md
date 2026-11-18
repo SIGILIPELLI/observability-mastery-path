@@ -71,7 +71,7 @@ log line first, hoping to notice a pattern — is exactly the approach [Lesson 7
 showed doesn't scale.
 
 This pattern becomes even more powerful once a real `trace_id` (built with real cross-service propagation in
-[Microservices, Level 3, Lesson 8](https://sigilipelli.github.io/microservices-mastery-path/level-3/08-distributed-tracing/))
+[Microservices, Level 3, Lesson 8](https://learnmasterypath.com/microservices-mastery-path/level-3/08-distributed-tracing/))
 is added to the structured fields: a metric spike narrows the time window; the trace ID then lets you follow one
 specific failing request's full structured log trail across every service it touched, not just the one that
 happened to log the final decline.
@@ -92,7 +92,7 @@ happened to log the final decline.
 
 Add a second structured field to the log line, `payment_latency_ms`, measuring how long the real call to
 Payments took. Trigger a real slow-payment scenario (reuse the slow-dependency pattern from
-[Microservices, Level 3, Lesson 3](https://sigilipelli.github.io/microservices-mastery-path/level-3/03-bulkheads-resource-isolation/)
+[Microservices, Level 3, Lesson 3](https://learnmasterypath.com/microservices-mastery-path/level-3/03-bulkheads-resource-isolation/)
 if you still have it, or add an artificial delay), and confirm you can correlate a real p95 latency spike in
 Prometheus with the real structured log entries whose `payment_latency_ms` was unusually high during that same
 window.

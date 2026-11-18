@@ -66,7 +66,7 @@ The real, practical difference: RED/Golden-Signals panels (built in [Lesson 2](0
 inside — this specific resource is exhausted or close to it. A real incident often starts with a Golden Signals
 dashboard showing elevated latency, and is diagnosed by then checking USE panels to find which specific resource
 (CPU? file descriptors? a connection pool, the exact kind measured for real in
-[Microservices, Level 3, Lesson 3](https://sigilipelli.github.io/microservices-mastery-path/level-3/03-bulkheads-resource-isolation/))
+[Microservices, Level 3, Lesson 3](https://learnmasterypath.com/microservices-mastery-path/level-3/03-bulkheads-resource-isolation/))
 is actually the bottleneck. Neither framework alone gives the complete picture; they're complementary, not
 competing.
 
@@ -84,6 +84,6 @@ competing.
 
 Find a real, working way to get process-level memory and CPU metrics for the Python apps on this machine despite
 the `/proc` gap — either by running them inside a real Linux environment (a Lima VM, as used in the
-[Linux Mastery Path](https://sigilipelli.github.io/linux-mastery-path/)), or by instrumenting a custom metric
+[Linux Mastery Path](https://learnmasterypath.com/linux-mastery-path/)), or by instrumenting a custom metric
 using Python's own `resource` or `psutil` module to read real memory/CPU usage directly and expose it as a
 `Gauge`. Confirm your fix produces real, non-empty data where the default collector produced none.

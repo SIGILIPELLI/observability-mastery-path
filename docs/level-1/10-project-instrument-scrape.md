@@ -80,7 +80,7 @@ sum of one service's two outcome rates must equal the other service's total rate
 check is a genuinely useful way to build confidence that instrumentation across a multi-service boundary is
 actually correct, not just independently "working" in isolation — the same spirit as the cross-service
 consistency tests built with real assertions in
-[Microservices, Level 2, Lesson 9](https://sigilipelli.github.io/microservices-mastery-path/level-2/09-testing-data-consistency/),
+[Microservices, Level 2, Lesson 9](https://learnmasterypath.com/microservices-mastery-path/level-2/09-testing-data-consistency/),
 applied here to metrics instead of application state.
 
 ## Common mistakes

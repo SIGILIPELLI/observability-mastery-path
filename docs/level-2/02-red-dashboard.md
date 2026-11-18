@@ -39,7 +39,7 @@ instruments. The three signals answer three different, complementary real questi
 
 - **Rate**: how much traffic is this service handling right now? A sudden drop can mean upstream trouble sending
   traffic; a sudden spike can mean a real surge, a retry storm (the exact pattern measured for real in
-  [Microservices, Level 3, Lesson 2](https://sigilipelli.github.io/microservices-mastery-path/level-3/02-retries-timeouts-backoff/)),
+  [Microservices, Level 3, Lesson 2](https://learnmasterypath.com/microservices-mastery-path/level-3/02-retries-timeouts-backoff/)),
   or a bug causing duplicate calls.
 - **Errors**: what fraction of that traffic is failing? Rate alone can't tell you this — a service handling
   1000 req/s with a 50% real error rate looks identical to a healthy one on a Rate panel alone, which is exactly

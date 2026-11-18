@@ -37,7 +37,7 @@ you're instrumenting.
 **20.25x** sounds alarming in isolation. **12.758 microseconds** sounds negligible in isolation. Both are the
 exact same real measurement, and the real lesson is that **relative overhead only matters relative to the real
 cost of the thing being measured**. This course's own `orders_app.py` checkout endpoint, measured for real back in
-[Microservices, Level 1, Lesson 10](https://sigilipelli.github.io/microservices-mastery-path/level-1/10-project-decompose-monolith.md),
+[Microservices, Level 1, Lesson 10](https://learnmasterypath.com/microservices-mastery-path/level-1/10-project-decompose-monolith.md),
 takes something on the order of 10-20 *milliseconds* for a real network round trip — against that, 12.758
 *microseconds* of instrumentation overhead is roughly 0.1% or less of the total request time, utterly
 imperceptible to a real user. Against this lesson's deliberately tiny, CPU-bound `sum(range(100))` — a function
