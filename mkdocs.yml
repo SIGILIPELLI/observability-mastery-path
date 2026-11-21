@@ -53,9 +53,11 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/progress-tracker.css
+  - stylesheets/final-quiz.css
 
 extra_javascript:
   - javascripts/progress-tracker.js
+  - javascripts/final-quiz.js
 
 
 
@@ -127,3 +129,5 @@ nav:
       - "08 · On-Call & Incident Response With Your Own Stack": level-4/08-oncall-incident-response.md
       - "09 · Common Observability Anti-Patterns": level-4/09-observability-antipatterns.md
       - "10 · Capstone — Build a Complete SLO-Driven Observability Stack": level-4/10-capstone-slo-driven-stack.md
+  - "🎯 Final Quiz": quiz.md
+
