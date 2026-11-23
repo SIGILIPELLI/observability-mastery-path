@@ -83,7 +83,7 @@ not_in_nav: |
 
 nav:
   - Home: index.md
-  - "💼 Interview Questions": interview-questions.md
+  - Interview Questions: interview-questions.md
   - "Level 1 · Metrics & Prometheus Fundamentals":
       - Overview: level-1/index.md
       - "01 · What Observability Actually Means: Metrics, Logs & Traces": level-1/01-what-observability-means.md
@@ -132,5 +132,5 @@ nav:
       - "08 · On-Call & Incident Response With Your Own Stack": level-4/08-oncall-incident-response.md
       - "09 · Common Observability Anti-Patterns": level-4/09-observability-antipatterns.md
       - "10 · Capstone — Build a Complete SLO-Driven Observability Stack": level-4/10-capstone-slo-driven-stack.md
-  - "🎯 Final Quiz": quiz.md
+  - Final Quiz: quiz.md
 
