@@ -1,6 +1,6 @@
 ---
 title: "Free Observability Course: Prometheus, PromQL, Grafana, Alerting, OpenTelemetry & SLOs"
-description: "Free observability course: 36 lessons and 4 projects on Prometheus, PromQL, Grafana dashboards, alerting, OpenTelemetry, and SLOs."
+description: "Free observability course: 36 lessons, 3 projects and 1 capstone on Prometheus, PromQL, Grafana dashboards, alerting, OpenTelemetry, and SLOs."
 ---
 
 # Observability Mastery Path
@@ -31,7 +31,7 @@ repeating.
 | **3 · Distributed Tracing & OpenTelemetry** | Spans, context propagation, the Collector, sampling, cardinality, correlating all three pillars | 10 | Trace a real request end to end and correlate it with metrics and logs |
 | **4 · SLOs & Operating Observability at Scale** | SLIs/SLOs/error budgets, burn-rate alerting, capacity planning, scaling Prometheus, on-call | 10 | Design and operate an SLO-driven observability stack for a real service |
 
-Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons and 4 projects** in total.
+Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons, 3 projects and 1 capstone** in total.
 
 ## How to use this site
 
